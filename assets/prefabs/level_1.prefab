@@ -85,20 +85,17 @@
       },
       {
         "__id__": 88
-      },
-      {
-        "__id__": 94
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 100
+        "__id__": 94
       }
     ],
     "_prefab": {
-      "__id__": 101
+      "__id__": 95
     },
     "_id": "",
     "_opacity": 255,
@@ -2628,7 +2625,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -50,
+      "x": -21.1,
       "y": -409
     },
     "_skewX": 0,
@@ -2801,7 +2798,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 81,
+      "width": 143.4,
       "height": 81
     },
     "_rotationX": 0,
@@ -2810,7 +2807,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 45,
+      "x": 145,
       "y": -409
     },
     "_skewX": 0,
@@ -2855,7 +2852,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 76.68,
+      "width": 90,
       "height": 80
     },
     "_rotationX": 0,
@@ -2890,7 +2887,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "升塔a\n200G",
+    "_N$string": "升级塔\n200G",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2919,7 +2916,7 @@
       "__uuid__": "6839be6f-4f0a-486f-bec2-d8a31fbac1e6"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -2942,188 +2939,6 @@
       "__uuid__": "951917fe-3f44-4ab6-97cc-f3e880d17db8"
     },
     "fileId": "89T0MrcRRLdrz0n5y+S5Ca",
-    "sync": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "升级塔b",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 1
-    },
-    "_children": [
-      {
-        "__id__": 95
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 98
-      }
-    ],
-    "_prefab": {
-      "__id__": 99
-    },
-    "_id": "",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 241,
-      "b": 39,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 81,
-      "height": 81
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 142,
-      "y": -409
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 94
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 96
-      }
-    ],
-    "_prefab": {
-      "__id__": 97
-    },
-    "_id": "",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 76.68,
-      "height": 80
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 95
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 30,
-    "_fontSize": 30,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_N$string": "升塔b\n200G",
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
-    },
-    "asset": {
-      "__uuid__": "951917fe-3f44-4ab6-97cc-f3e880d17db8"
-    },
-    "fileId": "1cnRIBCORHG4PrU7UYcK5M",
-    "sync": false
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 94
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "6839be6f-4f0a-486f-bec2-d8a31fbac1e6"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
-    },
-    "asset": {
-      "__uuid__": "951917fe-3f44-4ab6-97cc-f3e880d17db8"
-    },
-    "fileId": "6aj15kK/9JUqJfGdrPOFu0",
     "sync": false
   },
   {
@@ -3220,9 +3035,6 @@
     "updateTower": [
       {
         "__id__": 92
-      },
-      {
-        "__id__": 98
       }
     ],
     "uiNode": {
@@ -3236,7 +3048,8 @@
       "__id__": 74
     },
     "G_coinTotalNum": 10000,
-    "towerType": ""
+    "towerType": "",
+    "yes": 1
   },
   {
     "__type__": "cc.PrefabInfo",
