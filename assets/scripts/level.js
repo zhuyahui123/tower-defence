@@ -34,7 +34,9 @@ cc.Class({
         G_coinCost: {displayName: "G币消耗", default: null, type: cc.Label},
         G_coinTotalNum: 10000,
         towerType: "",
-        yes: 1,
+        _count: 2,
+
+        tipsLabel: {displayName: "倒计时提示", default: null, type: cc.Label}
     },
 
     onLoad() {
@@ -42,7 +44,8 @@ cc.Class({
             let node = this.towerPosNodes[i];
             this._setState(node, TowerPosNodeState.Null); // 设置状态
             this._setTouchEvent(node); // 设置触摸事件
-        };
+        }
+        ;
         global.event.on("build_tower", this._buildTower.bind(this));// 接收建塔消息
         global.event.on("update_tower", this._updateTower.bind(this));// 接收升级塔消息
         global.event.on("sell_tower", this._sellTower.bind(this));// 接收卖掉塔消息
@@ -75,6 +78,7 @@ cc.Class({
         let menu = cc.instantiate(this.buildMenuPrefab);
         menu.parent = this.node;
         menu.position = node.position;
+        cc.log("建塔");
         this._setState(node, TowerPosNodeState.BuildMenu);
         node.menu = menu;
     },
@@ -84,6 +88,7 @@ cc.Class({
         let menu = cc.instantiate(this.updateMenuPrefab);
         menu.parent = this.node;
         menu.position = node.position;
+        cc.log("升级塔");
         this._setState(node, TowerPosNodeState.UpdateMenu);
         node.menu = menu;
     },
@@ -157,9 +162,13 @@ cc.Class({
     },
     // 升级塔
     _updateTower() {
+        if (this._count !== 2) {
+            return
+        }
         let node = this._closeMenu();
         node.tower.getComponent("tower").updateTower();
         // 升级塔消耗G币按钮提示
+        this.schedule(this._countDownTime, 1);
         this.updateTower[0].node.color = cc.hexToColor("#6D6D6D");
         this.scheduleOnce(function () {
             this.updateTower[0].node.color = cc.hexToColor("#00F127");
@@ -181,6 +190,17 @@ cc.Class({
                 }
             }
         });
+    },
+    _countDownTime() {
+        if (this._count === 0) {
+            this._count = 2;
+            this.tipsLabel.string = "2s";
+            this.unschedule(this._countDownTime);
+        } else {
+            this.tipsLabel.string = this._count + "s";
+            this._count--;
+        }
+
     },
     // 卖掉塔
     _sellTower: function () {
