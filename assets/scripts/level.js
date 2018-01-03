@@ -130,7 +130,7 @@ cc.Class({
         this.buildTower[data].node.color = cc.hexToColor("#6D6D6D");
         this.scheduleOnce(function () {
             this.buildTower[data].node.color = cc.hexToColor("#FF0303");
-        }, 2)
+        }, 2);
 
         // 读取tower配置表
         cc.loader.loadRes("./config/tower_config", (err, result) => {
@@ -159,15 +159,10 @@ cc.Class({
     _updateTower() {
         let node = this._closeMenu();
         node.tower.getComponent("tower").updateTower();
-
+        // 升级塔消耗G币按钮提示
         this.updateTower[0].node.color = cc.hexToColor("#6D6D6D");
         this.scheduleOnce(function () {
             this.updateTower[0].node.color = cc.hexToColor("#00F127");
-        }, 2);
-
-        this.updateTower[1].node.color = cc.hexToColor("#6D6D6D");
-        this.scheduleOnce(function () {
-            this.updateTower[1].node.color = cc.hexToColor("#00F127");
         }, 2);
 
         cc.loader.loadRes("./config/tower_config", (err, result) => {
