@@ -408,7 +408,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -368,
+      "x": -328,
       "y": 0
     },
     "_skewX": 0,
@@ -491,7 +491,8 @@
     "baseHealth": {
       "__id__": 13
     },
-    "baseHealthTotalNum": 6
+    "baseHealthTotalNum": 6,
+    "rescoreEnemyDeadedNum": 0
   },
   {
     "__type__": "cc.PrefabInfo",
