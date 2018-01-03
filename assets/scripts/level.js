@@ -25,13 +25,16 @@ cc.Class({
         waves: {displayName: "当前波次", default: null, type: cc.Label},
         baseHealth: {displayName: "基地生命值", default: null, type: cc.Label},
         // baseHealthTotalNum: 10, //基地生命总值
+        buildTower: {displayName: "建塔间隔", default: [], type: cc.Sprite},
+        updateTower: {displayName: "升塔间隔", default: [], type: cc.Sprite},
 
         uiNode: {displayName: "游戏节点", default: null, type: cc.Node},
         wavesTotalNum: 0, //总波数
         toggle: {displayName: "复选按钮", default: null, type: cc.Toggle},
         G_coinCost: {displayName: "G币消耗", default: null, type: cc.Label},
         G_coinTotalNum: 10000,
-        towerType: ""
+        towerType: "",
+        yes: 1,
     },
 
     onLoad() {
@@ -60,14 +63,14 @@ cc.Class({
         node.on(cc.Node.EventType.TOUCH_START, (event) => {
             cc.log("touch node name = " + event.target.name);
             if (node.state === TowerPosNodeState.Null) {
-                this._showBuildMenu(event.target);
+                this.showBuildMenu(event.target);
             } else if (node.state === TowerPosNodeState.Tower) {
-                this._showUpdateMenu(event.target);
+                this.showUpdateMenu(event.target);
             }
         });
     },
     // 显示建立菜单
-    _showBuildMenu(node) {
+    showBuildMenu(node) {
         this._closeMenu();
         let menu = cc.instantiate(this.buildMenuPrefab);
         menu.parent = this.node;
@@ -76,7 +79,7 @@ cc.Class({
         node.menu = menu;
     },
     // 显示升级菜单
-    _showUpdateMenu(node) {
+    showUpdateMenu(node) {
         this._closeMenu();
         let menu = cc.instantiate(this.updateMenuPrefab);
         menu.parent = this.node;
@@ -123,6 +126,20 @@ cc.Class({
         tower.position = node.position;
         this._setState(node, TowerPosNodeState.Tower);
         node.tower = tower;
+        if (this.towerPrefabs[0]) {
+            this.buildTower[0].node.color = cc.hexToColor("#6D6D6D");
+
+            this.scheduleOnce(function () {
+                this.buildTower[0].node.color = cc.hexToColor("#FF0303");
+            }, 2)
+        }
+        if (this.towerPrefabs[1]) {
+            this.buildTower[1].node.color = cc.hexToColor("#6D6D6D");
+            this.scheduleOnce(function () {
+                this.buildTower[1].node.color = cc.hexToColor("#FF0303");
+            }, 2)
+        }
+
         // 读取tower配置表
         cc.loader.loadRes("./config/tower_config", (err, result) => {
             if (err) {
@@ -150,6 +167,19 @@ cc.Class({
     _updateTower() {
         let node = this._closeMenu();
         node.tower.getComponent("tower").updateTower();
+
+        if (this.yes) {
+            this.updateTower[0].node.color = cc.hexToColor("#6D6D6D");
+            this.scheduleOnce(function () {
+                this.updateTower[0].node.color = cc.hexToColor("#00F127");
+            }, 2);
+        } else {
+            this.updateTower[1].node.color = cc.hexToColor("#6D6D6D");
+            this.scheduleOnce(function () {
+                this.updateTower[1].node.color = cc.hexToColor("#00F127");
+            }, 2);
+        }
+
         cc.loader.loadRes("./config/tower_config", (err, result) => {
             if (err) {
                 cc.log("load config = " + err);
@@ -214,10 +244,9 @@ cc.Class({
     },
     // 退出或关闭游戏
     onBtnClickClose() {
-        // cc.director.end();
         // this._closeMenu();
         // UILoader.retainScene(this.node);
-        cc.director.loadScene("mainScene");
+        // cc.director.loadScene("mainScene");
 
         // UIMgr.destroyUI(this);
         // this.node.destroyAllChildren();
