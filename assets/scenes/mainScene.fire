@@ -1131,12 +1131,6 @@
     "instructionPre": {
       "__uuid__": "355a2640-1a13-4204-a28c-500081879638"
     },
-    "startBtn": {
-      "__id__": 13
-    },
-    "instructionBtn": {
-      "__id__": 21
-    },
     "uiNode": {
       "__id__": 33
     }
