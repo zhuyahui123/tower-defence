@@ -83,7 +83,7 @@ cc.Class({
         cc.director.loadScene("game");
     },
     onBtnClickClose() {
-        UIMgr.destroyUI(this);
+        cc.director.loadScene("mainScene");
     }
 
 });
