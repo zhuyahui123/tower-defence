@@ -106,8 +106,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 600,
-      "height": 640
+      "width": 920,
+      "height": 840
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -115,8 +115,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 2.2737367544323206e-13,
+      "y": 5.684341886080802e-14
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -161,7 +161,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 582.25,
-      "height": 400
+      "height": 480
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -195,7 +195,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "1、荣誉使命是一款塔防小游戏。\n玩家需要在游戏里使用各种武器\n保护自己的基地；\n2、游戏内玩家点击屏幕下方的\n武器，放置在放置区，来抵挡入\n侵的敌军，每次杀死敌军可获得\n一定数量的G币，购买武器需要\nG币；\n3、玩家基地生命值为0的时候，\n游戏失败。",
+    "_N$string": "1、荣誉使命是一款塔防小游戏。\n玩家需要在游戏里使用各种武器\n保护自己的基地；\n\n2、游戏内玩家点击屏幕下方的\n武器，放置在放置区，来抵挡入\n侵的敌军，每次杀死敌军可获得\n一定数量的G币，购买武器需要\nG币；\n\n3、玩家基地生命值为0的时候，\n游戏失败。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 0,
     "_N$fontFamily": "Arial",
@@ -499,7 +499,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "ae4be6f0-4c9c-49ce-a49c-4f7111fd95c6"
+      "__uuid__": "4eee3828-031b-4026-beca-21674798f11f"
     },
     "_type": 0,
     "_sizeMode": 0,
