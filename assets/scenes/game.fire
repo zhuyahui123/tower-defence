@@ -63,7 +63,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 13
       }
     ],
     "_prefab": null,
@@ -174,7 +174,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 10
+        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -272,13 +272,16 @@
     "_children": [
       {
         "__id__": 7
+      },
+      {
+        "__id__": 9
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 9
+        "__id__": 11
       }
     ],
     "_prefab": null,
@@ -351,8 +354,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 222.46,
-      "height": 400
+      "width": 190,
+      "height": 250
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -361,7 +364,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 69
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -379,14 +382,92 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 400,
-    "_fontSize": 400,
-    "_lineHeight": 400,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_lineHeight": 100,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "af3506ce-0edf-4890-b057-8b1e7341e953"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_N$string": "3",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "start-go-game",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 6
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 10
+      }
+    ],
+    "_prefab": null,
+    "_id": "d2fac5+KFFPJ/zx770W+XY",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 396.48,
+      "height": 100
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -300,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 9
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 100,
+    "_fontSize": 200,
+    "_lineHeight": 200,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "e0268bbc-bbe7-4529-a284-d0121144491d"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "Let's Go",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -402,6 +483,9 @@
     "_enabled": true,
     "timeCountDownLabel": {
       "__id__": 8
+    },
+    "startLabel": {
+      "__id__": 10
     }
   },
   {
