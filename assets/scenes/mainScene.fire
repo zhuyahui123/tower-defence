@@ -57,16 +57,19 @@
     "_children": [
       {
         "__id__": 3
+      },
+      {
+        "__id__": 33
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 32
+        "__id__": 34
       },
       {
-        "__id__": 33
+        "__id__": 35
       }
     ],
     "_prefab": null,
@@ -134,7 +137,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 31
+      "__id__": 32
     },
     "_id": "89nfWAeMZOcaqS+qB2DvqF",
     "_opacity": 255,
@@ -951,7 +954,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Node",
+    "_name": "游戏公告",
     "_objFlags": 0,
     "_parent": {
       "__id__": 3
@@ -959,10 +962,106 @@
     "_children": [],
     "_tag": -1,
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 30
+      }
+    ],
     "_prefab": {
-      "__id__": 30
+      "__id__": 31
     },
+    "_id": "47/Cf0vvhOHbbugpI47A9A",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 242,
+      "g": 252,
+      "b": 12,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 676.67,
+      "height": 40
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -506
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 29
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 30,
+    "_fontSize": 30,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_N$string": "声明: 抵制不良游戏，适度游戏益脑，合理安排时间",
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 3
+    },
+    "asset": {
+      "__uuid__": "ad6866a9-a6ed-4045-8c42-3216da85fce8"
+    },
+    "fileId": "47/Cf0vvhOHbbugpI47A9A",
+    "sync": false
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 3
+    },
+    "asset": {
+      "__uuid__": "ad6866a9-a6ed-4045-8c42-3216da85fce8"
+    },
+    "fileId": "89nfWAeMZOcaqS+qB2DvqF",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "New Node",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
     "_id": "25iR+G5QRF7aEMnOxy1+M9",
     "_opacity": 255,
     "_color": {
@@ -1000,28 +1099,6 @@
     "groupIndex": 0
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 3
-    },
-    "asset": {
-      "__uuid__": "ad6866a9-a6ed-4045-8c42-3216da85fce8"
-    },
-    "fileId": "25iR+G5QRF7aEMnOxy1+M9",
-    "sync": false
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 3
-    },
-    "asset": {
-      "__uuid__": "ad6866a9-a6ed-4045-8c42-3216da85fce8"
-    },
-    "fileId": "89nfWAeMZOcaqS+qB2DvqF",
-    "sync": false
-  },
-  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -1054,8 +1131,14 @@
     "instructionPre": {
       "__uuid__": "355a2640-1a13-4204-a28c-500081879638"
     },
+    "startBtn": {
+      "__id__": 13
+    },
+    "instructionBtn": {
+      "__id__": 21
+    },
     "uiNode": {
-      "__id__": 29
+      "__id__": 33
     }
   }
 ]
