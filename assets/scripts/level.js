@@ -36,7 +36,8 @@ cc.Class({
         towerType: "",
         _count: 2,
 
-        tipsLabel: {displayName: "倒计时提示", default: null, type: cc.Label}
+        tipsLabel: {displayName: "倒计时提示", default: null, type: cc.Label},
+        pauseLabel: {displayName: "暂停提示", default: null, type: cc.Label}
     },
 
     onLoad() {
@@ -134,7 +135,7 @@ cc.Class({
         // 建塔消耗G币按钮提示
         this.buildTower[data].node.color = cc.hexToColor("#6D6D6D");
         this.scheduleOnce(function () {
-            this.buildTower[data].node.color = cc.hexToColor("#FF0303");
+            this.buildTower[data].node.color = cc.hexToColor("#FDFAFA");
         }, 2);
 
         // 读取tower配置表
@@ -264,10 +265,12 @@ cc.Class({
         if (this.toggle.isChecked === false) {
             cc.log("暂停");
             cc.director.pause();
+            this.pauseLabel.string = "继续";
         } else if (this.toggle.isChecked === true) {
             cc.log("继续");
             // cc.director.loadScene("game");
             cc.director.resume();
+            this.pauseLabel.string = "暂停";
         }
     },
     // 当前敌人经过的节点
