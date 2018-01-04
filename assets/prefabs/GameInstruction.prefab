@@ -22,11 +22,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 16
+        "__id__": 17
       }
     ],
     "_prefab": {
-      "__id__": 17
+      "__id__": 18
     },
     "_id": "",
     "_opacity": 255,
@@ -83,11 +83,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 14
+        "__id__": 15
       }
     ],
     "_prefab": {
-      "__id__": 15
+      "__id__": 16
     },
     "_id": "",
     "_opacity": 255,
@@ -147,9 +147,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -228,14 +228,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 10
+        "__id__": 11
       },
       {
-        "__id__": 11
+        "__id__": 12
       }
     ],
     "_prefab": {
-      "__id__": 13
+      "__id__": 14
     },
     "_id": "",
     "_opacity": 255,
@@ -286,18 +286,21 @@
     "_components": [
       {
         "__id__": 8
+      },
+      {
+        "__id__": 9
       }
     ],
     "_prefab": {
-      "__id__": 9
+      "__id__": 10
     },
     "_id": "",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 248,
+      "g": 245,
+      "b": 245,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -340,14 +343,33 @@
     "_fontSize": 40,
     "_lineHeight": 45,
     "_enableWrapText": false,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "e0268bbc-bbe7-4529-a284-d0121144491d"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_N$string": "返回",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 1
+  },
+  {
+    "__type__": "cc.LabelOutline",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "_width": 2
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -419,7 +441,7 @@
     },
     "clickEvents": [
       {
-        "__id__": 12
+        "__id__": 13
       }
     ],
     "_N$interactable": true,
@@ -477,7 +499,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "c42bbaa9-dbab-4c59-9640-9c70bd4812eb"
+      "__uuid__": "ae4be6f0-4c9c-49ce-a49c-4f7111fd95c6"
     },
     "_type": 0,
     "_sizeMode": 0,
