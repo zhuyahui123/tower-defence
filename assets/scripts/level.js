@@ -239,7 +239,7 @@ cc.Class({
         this.baseEnemyNum++;
         cc.log("------------this.baseHealthTotalNum: " + this.baseHealthTotalNum);
         let enemyNum = this.baseEnemyNum;
-        this.baseHealth.string = "敌人数量：" + enemyNum;
+        this.baseHealth.string = "敌人次数：" + enemyNum;
     },
     // 添加子弹
     _addBullet(tower, position) {
