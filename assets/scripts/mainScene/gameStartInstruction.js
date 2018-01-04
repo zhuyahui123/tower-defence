@@ -10,19 +10,7 @@ cc.Class({
         gameGuide1: {displayName: "游戏指引1", default: null, type: cc.Node},
         gameGuide2: {displayName: "游戏指引2", default: null, type: cc.Node},
         gameGuide3: {displayName: "游戏指引3", default: null, type: cc.Node},
-        gameGuide4: {displayName: "游戏指引4", default: null, type: cc.Node},
-
-        gameGuide1NextBtn: {displayName: "指引1下一步", default: null, type: cc.Node},
-        gameGuide1ExitBtn: {displayName: "指引1退出", default: null, type: cc.Node},
-        gameGuide2PrevBtn: {displayName: "指引2上一步", default: null, type: cc.Node},
-        gameGuide2NextBtn: {displayName: "指引2下一步", default: null, type: cc.Node},
-        gameGuide2ExitBtn: {displayName: "指引2退出", default: null, type: cc.Node},
-        gameGuide3PrevBtn: {displayName: "指引3上一步", default: null, type: cc.Node},
-        gameGuide3NextBtn: {displayName: "指引3下一步", default: null, type: cc.Node},
-        gameGuide3ExitBtn: {displayName: "指引3退出", default: null, type: cc.Node},
-        gameGuide4PrevBtn: {displayName: "指引4上一步", default: null, type: cc.Node},
-        gameGuide4NextBtn: {displayName: "指引4下一步", default: null, type: cc.Node},
-        gameGuide4ExitBtn: {displayName: "指引4退出", default: null, type: cc.Node}
+        gameGuide4: {displayName: "游戏指引4", default: null, type: cc.Node}
     },
 
     onLoad() {
