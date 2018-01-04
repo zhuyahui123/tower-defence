@@ -7,8 +7,6 @@ cc.Class({
         startGameInstructionPre: {displayName: "游戏流程说明", default: null, type: cc.Prefab},
         startGamePre: {displayName: "游戏开始", default: null, type: cc.Prefab},
         instructionPre: {displayName: "游戏说明", default: null, type: cc.Prefab},
-        startBtn:{displayName:"游戏开始按钮",default:null,type:cc.Node},
-        instructionBtn:{displayName:"游戏说明按钮",default:null,type:cc.Node},
         uiNode: {displayName: "游戏节点", default: null, type: cc.Node}
     },
 
