@@ -7567,39 +7567,6 @@
     },
     "gameGuide4": {
       "__id__": 159
-    },
-    "gameGuide1NextBtn": {
-      "__id__": 63
-    },
-    "gameGuide1ExitBtn": {
-      "__id__": 72
-    },
-    "gameGuide2PrevBtn": {
-      "__id__": 96
-    },
-    "gameGuide2NextBtn": {
-      "__id__": 105
-    },
-    "gameGuide2ExitBtn": {
-      "__id__": 114
-    },
-    "gameGuide3PrevBtn": {
-      "__id__": 128
-    },
-    "gameGuide3NextBtn": {
-      "__id__": 137
-    },
-    "gameGuide3ExitBtn": {
-      "__id__": 146
-    },
-    "gameGuide4PrevBtn": {
-      "__id__": 160
-    },
-    "gameGuide4NextBtn": {
-      "__id__": 169
-    },
-    "gameGuide4ExitBtn": {
-      "__id__": 178
     }
   },
   {
