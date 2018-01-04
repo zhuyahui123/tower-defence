@@ -10,6 +10,7 @@ cc.Class({
         gameGuide1: {displayName: "游戏指引1", default: null, type: cc.Node},
         gameGuide2: {displayName: "游戏指引2", default: null, type: cc.Node},
         gameGuide3: {displayName: "游戏指引3", default: null, type: cc.Node},
+        gameGuide4: {displayName: "游戏指引4", default: null, type: cc.Node},
 
         gameGuide1NextBtn: {displayName: "指引1下一步", default: null, type: cc.Node},
         gameGuide1ExitBtn: {displayName: "指引1退出", default: null, type: cc.Node},
@@ -19,6 +20,9 @@ cc.Class({
         gameGuide3PrevBtn: {displayName: "指引3上一步", default: null, type: cc.Node},
         gameGuide3NextBtn: {displayName: "指引3下一步", default: null, type: cc.Node},
         gameGuide3ExitBtn: {displayName: "指引3退出", default: null, type: cc.Node},
+        gameGuide4PrevBtn: {displayName: "指引4上一步", default: null, type: cc.Node},
+        gameGuide4NextBtn: {displayName: "指引4下一步", default: null, type: cc.Node},
+        gameGuide4ExitBtn: {displayName: "指引4退出", default: null, type: cc.Node}
     },
 
     onLoad() {
@@ -26,6 +30,7 @@ cc.Class({
         this.gameGuideTips.node.active = true;
         this.gameGuide2.active = false;
         this.gameGuide3.active = false;
+        this.gameGuide4.active = false;
     },
 
     // 指引1下一步
@@ -62,15 +67,31 @@ cc.Class({
         this.gameGuide2.active = true;
         this.gameGuide3.active = false;
     },
-    // 指引3下一步(游戏开始)
+    // 指引3下一步
     onBtnClickNextStep3(){
-        this.gameGuideNode.active = false;
-        cc.director.loadScene("game");
+        this.gameGuide3.active = false;
+        this.gameGuide4.active = true;
     },
     // 指引3退出(游戏开始)
     onBtnClickExitStep3(){
         this.gameGuideNode.active = false;
         this.gameGuide3.active = false;
+        cc.director.loadScene("game");
+    },
+    // 指引4上一步
+    onBtnClickPrevStep4(){
+        this.gameGuide3.active = true;
+        this.gameGuide4.active = false;
+    },
+    // 指引4下一步(游戏开始)
+    onBtnClickNextStep4(){
+        this.gameGuideNode.active = false;
+        cc.director.loadScene("game");
+    },
+    // 指引4退出(游戏开始)
+    onBtnClickExitStep4(){
+        this.gameGuideNode.active = false;
+        this.gameGuide4.active = false;
         cc.director.loadScene("game");
     },
     onBtnClickClose() {
