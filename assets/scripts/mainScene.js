@@ -13,7 +13,7 @@ cc.Class({
     },
 
     onLoad() {
-        let action1 = cc.moveTo(1,cc.p(0,200));
+        let action1 = cc.moveTo(1,cc.p(0,100));
         let action2 = cc.fadeOut(1);
         let action3 = cc.moveTo(1,cc.p(0,50));
         let action4 = cc.fadeIn(1);
@@ -21,7 +21,7 @@ cc.Class({
         let repeat0 = cc.repeatForever(sequence0);
         this.shootSprite1.node.runAction(repeat0);
         let delayTime = cc.delayTime(1);
-        let action5 = cc.moveTo(1,cc.p(0,200));
+        let action5 = cc.moveTo(1,cc.p(0,150));
         let action6 = cc.fadeOut(1);
         let action7 = cc.moveTo(1,cc.p(0,50));
         let action8 = cc.fadeIn(1);
