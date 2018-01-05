@@ -37,7 +37,13 @@ cc.Class({
         _count: 2,
 
         tipsLabel: {displayName: "倒计时提示", default: null, type: cc.Label},
-        pauseLabel: {displayName: "暂停提示", default: null, type: cc.Label}
+        pauseLabel: {displayName: "暂停提示", default: null, type: cc.Label},
+        towerA_Toggle: {displayName: "塔a按钮", default: null, type: cc.Toggle},
+        towerA_Info: {displayName: "塔a信息", default: null, type: cc.Sprite},
+        towerB_Toggle: {displayName: "塔b按钮", default: null, type: cc.Toggle},
+        towerB_Info: {displayName: "塔b信息", default: null, type: cc.Sprite},
+        towerUpdate_Toggle: {displayName: "升级塔按钮", default: null, type: cc.Toggle},
+        towerUpdate_Info: {displayName: "升级塔信息", default: null, type: cc.Sprite}
     },
 
     onLoad() {
@@ -325,6 +331,33 @@ cc.Class({
             }
         }
 
+    },
+    onBtnClickTower_a_Info() {
+        if (this.towerA_Toggle.isChecked === false) {
+            cc.director.pause();
+            this.towerA_Info.node.active = true;
+        } else if (this.towerA_Toggle.isChecked === true) {
+            cc.director.resume();
+            this.towerA_Info.node.active = false;
+        }
+    },
+    onBtnClickTower_b_Info() {
+        if (this.towerB_Toggle.isChecked === false) {
+            cc.director.pause();
+            this.towerB_Info.node.active = true;
+        } else if (this.towerB_Toggle.isChecked === true) {
+            cc.director.resume();
+            this.towerB_Info.node.active = false;
+        }
+    },
+    onBtnClickTower_update_Info() {
+        if (this.towerUpdate_Toggle.isChecked === false) {
+            cc.director.pause();
+            this.towerUpdate_Info.node.active = true;
+        } else if (this.towerUpdate_Toggle.isChecked === true) {
+            cc.director.resume();
+            this.towerUpdate_Info.node.active = false;
+        }
     }
 
 });
