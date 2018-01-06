@@ -153,7 +153,6 @@ cc.Class({
                 this.towerConfig_a = result["tower_a"];
                 this.buildCost_a = this.towerConfig_a.build_cost;
                 this.updateCost_a = this.towerConfig_a.update_cost;
-                // cc.log("------------------this.buildCost: " + this.buildCost_a);
                 this.G_coinTotalNum -= this.buildCost_a;
                 Tips.show("建立塔" + data + "消耗" + this.buildCost_a + "G币");
                 this.G_coinCost.string = "G币：" + this.G_coinTotalNum;

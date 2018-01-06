@@ -22,62 +22,62 @@ cc.Class({
     },
 
     // 指引1下一步
-    onBtnClickNextStep1(){
+    onBtnClickNextStep1() {
         this.gameGuide1.active = false;
         this.gameGuide2.active = true;
         this.gameGuideTips.node.active = false;
     },
     // 指引1退出(游戏开始)
-    onBtnClickExitStep1(){
+    onBtnClickExitStep1() {
         this.gameGuideNode.active = false;
         this.gameGuide1.active = false;
         this.gameGuideTips.node.active = false;
         cc.director.loadScene("game");
     },
     // 指引2上一步
-    onBtnClickPrevStep2(){
+    onBtnClickPrevStep2() {
         this.gameGuide1.active = true;
         this.gameGuide2.active = false;
     },
     // 指引2下一步
-    onBtnClickNextStep2(){
+    onBtnClickNextStep2() {
         this.gameGuide2.active = false;
         this.gameGuide3.active = true;
     },
     // 指引2退出(游戏开始)
-    onBtnClickExitStep2(){
+    onBtnClickExitStep2() {
         this.gameGuideNode.active = false;
         this.gameGuide2.active = false;
         cc.director.loadScene("game");
     },
     // 指引3上一步
-    onBtnClickPrevStep3(){
+    onBtnClickPrevStep3() {
         this.gameGuide2.active = true;
         this.gameGuide3.active = false;
     },
     // 指引3下一步
-    onBtnClickNextStep3(){
+    onBtnClickNextStep3() {
         this.gameGuide3.active = false;
         this.gameGuide4.active = true;
     },
     // 指引3退出(游戏开始)
-    onBtnClickExitStep3(){
+    onBtnClickExitStep3() {
         this.gameGuideNode.active = false;
         this.gameGuide3.active = false;
         cc.director.loadScene("game");
     },
     // 指引4上一步
-    onBtnClickPrevStep4(){
+    onBtnClickPrevStep4() {
         this.gameGuide3.active = true;
         this.gameGuide4.active = false;
     },
     // 指引4下一步(游戏开始)
-    onBtnClickNextStep4(){
+    onBtnClickNextStep4() {
         this.gameGuideNode.active = false;
         cc.director.loadScene("game");
     },
     // 指引4退出(游戏开始)
-    onBtnClickExitStep4(){
+    onBtnClickExitStep4() {
         this.gameGuideNode.active = false;
         this.gameGuide4.active = false;
         cc.director.loadScene("game");
