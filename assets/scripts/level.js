@@ -43,7 +43,9 @@ cc.Class({
         towerB_Toggle: {displayName: "塔b按钮", default: null, type: cc.Toggle},
         towerB_Info: {displayName: "塔b信息", default: null, type: cc.Sprite},
         towerUpdate_Toggle: {displayName: "升级塔按钮", default: null, type: cc.Toggle},
-        towerUpdate_Info: {displayName: "升级塔信息", default: null, type: cc.Sprite}
+        towerUpdate_Info: {displayName: "升级塔信息", default: null, type: cc.Sprite},
+
+        enemyStartNode: {displayName: "敌人出发节点", default: null, type: cc.Node}
     },
 
     onLoad() {
@@ -67,6 +69,17 @@ cc.Class({
         this.baseEnemyNum = 0; //基地生命总值
         this.enemyNodeList = []; // 敌人节点列表
         this.bulletNodeList = [];
+
+        let action1 = cc.scaleTo(0.5, 1.1, 1.1);
+        let action0 = cc.delayTime(0.3);
+        let action2 = cc.scaleTo(0.5, 1, 1);
+        let sequence = cc.sequence(action1, action0, action2);
+        let repeat0 = cc.repeatForever(sequence);
+        this.enemyStartNode.runAction(repeat0);
+        this.scheduleOnce(function () {
+            let action = cc.fadeOut(1);
+            this.enemyStartNode.runAction(action);
+        }, 6)
     },
     // 设置触摸事件
     _setTouchEvent(node) {
