@@ -14,5 +14,17 @@
   "enemy_3": {
     "speed": 40,
     "health": 10
+  },
+  "enemy_4": {
+    "speed": 60,
+    "health": 10
+  },
+  "enemy_5": {
+    "speed": 80,
+    "health": 10
+  },
+  "enemy_6": {
+    "speed": 80,
+    "health": 15
   }
 }
