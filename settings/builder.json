@@ -17,10 +17,10 @@
     "portrait": false,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.tower-defence",
+  "packageName": "org.cocos2d.towerDefenceGame",
   "privateKey": "",
   "renderMode": "0",
-  "startScene": "8f25bd57-0439-4165-9592-b450a2c9f0e8",
-  "title": "tower_defence",
+  "startScene": "c94ba50f-72c1-4b95-9305-aed468025b0d",
+  "title": "towerDefenceGame",
   "webOrientation": "auto"
 }
