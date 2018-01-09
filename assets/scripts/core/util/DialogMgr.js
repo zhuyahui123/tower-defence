@@ -1,8 +1,5 @@
 module.exports = {
     showTipsWithOkBtn(word, okCb, cancelCb, closeCb) {
-        //添加声音
-        let SettingModule = require('SettingModule');
-        SettingModule.MusicObj.playBtnClickMusic();
         let scene = cc.director.getScene();
         if (scene) {
             let w = cc.view.getVisibleSize().width;
@@ -22,9 +19,6 @@ module.exports = {
         }
     },
     showTipsWithOkCancelBtn(word, okCb, cancelCb, closeCb) {
-        //添加声音
-        let SettingModule = require('SettingModule');
-        SettingModule.MusicObj.playBtnClickMusic();
         let scene = cc.director.getScene();
         if (scene) {
             let w = cc.view.getVisibleSize().width;
@@ -45,9 +39,6 @@ module.exports = {
     },
     // 只有一个确定按钮
     showTipsWithOkBtnAndNoCloseBtn(word, okCb, cancelCb) {
-        //添加声音
-        let SettingModule = require('SettingModule');
-        SettingModule.MusicObj.playBtnClickMusic();
         let scene = cc.director.getScene();
         if (scene) {
             let w = cc.view.getVisibleSize().width;

@@ -130,21 +130,4 @@ module.exports = {
         xhr.open('GET', url, true);
         xhr.send();
     },
-
-    getClientType() {
-        let GameEnumValue = require('GameEnumValue');
-        if (cc.sys.isNative) {
-            if (cc.sys.platform === cc.sys.ANDROID) {
-                return GameEnumValue.ClientType.Android;
-            } else if (cc.sys.platform === cc.sys.IPHONE || cc.sys.platform === cc.sys.IPAD) {
-                return GameEnumValue.ClientType.Ios;
-            } else {
-                return GameEnumValue.ClientType.Other;
-            }
-        } else if (cc.sys.isBrowser) {
-            return GameEnumValue.ClientType.Web;
-        } else {
-            return GameEnumValue.ClientType.Other;
-        }
-    },
 };
