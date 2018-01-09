@@ -201,7 +201,7 @@ cc.Class({
                 this.towerConfig_b = result["tower_b"];
                 this.updateCost_b = this.towerConfig_b.update_cost;
                 this.G_coinTotalNum -= this.updateCost_b;
-                this.G_coinCost.string = "G币：" + this.G_coinTotalNum;
+                this.G_coinCost.string = "G币: " + this.G_coinTotalNum;
                 Tips.show("升级塔消耗" + this.updateCost_b + "G币");
 
                 if (this.G_coinTotalNum < this.updateCost_b) {
@@ -247,7 +247,7 @@ cc.Class({
     // 添加敌人
     _addEnemy(type) {
         let waveNum = this.wavesTotalNum - this.currentWaveCount;
-        this.waves.string = "剩余波次：" + waveNum;
+        this.waves.string = "剩余波次: " + waveNum;
         cc.log("add Enemy" + this.currentEnemyCount); //当前敌人个数
         cc.log("add Wave " + this.currentWaveCount); //当前波次个数
         let enemy = cc.instantiate(this.enemyPrefab);
@@ -257,7 +257,7 @@ cc.Class({
         this.baseEnemyNum++;
         cc.log("------------this.baseHealthTotalNum: " + this.baseHealthTotalNum);
         let enemyNum = this.baseEnemyNum;
-        this.baseHealth.string = "敌人次数：" + enemyNum;
+        this.baseHealth.string = "敌人次数: " + enemyNum;
     },
     // 添加子弹
     _addBullet(tower, position) {
@@ -270,7 +270,7 @@ cc.Class({
     onBtnClickClose() {
         // this._closeMenu();
         // UILoader.retainScene(this.node);
-        // cc.director.loadScene("mainScene");
+        cc.director.loadScene("mainScene");
 
         // UIMgr.destroyUI(this);
         // this.node.destroyAllChildren();
@@ -342,7 +342,6 @@ cc.Class({
                 }
             }
         }
-
     },
     onBtnClickTower_a_Info() {
         if (this.towerA_Toggle.isChecked === false) {
