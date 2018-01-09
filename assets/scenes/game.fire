@@ -459,8 +459,8 @@
     "_enabled": true,
     "_useOriginalSize": false,
     "_actualFontSize": 100,
-    "_fontSize": 200,
-    "_lineHeight": 200,
+    "_fontSize": 100,
+    "_lineHeight": 110,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "e0268bbc-bbe7-4529-a284-d0121144491d"
