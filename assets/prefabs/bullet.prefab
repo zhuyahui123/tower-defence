@@ -99,8 +99,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 33,
-      "height": 62
+      "width": 23,
+      "height": 42
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -130,7 +130,7 @@
       "__uuid__": "62a324bc-3380-4d92-8490-4f8c2af3f428"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",

@@ -387,8 +387,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 255,
-      "b": 255,
+      "g": 235,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -399,8 +399,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 175,
-      "height": 40
+      "width": 125,
+      "height": 30
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -408,7 +408,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -170,
+      "x": 0,
       "y": 0
     },
     "_skewX": 0,
@@ -427,12 +427,14 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 35,
-    "_fontSize": 35,
-    "_lineHeight": 40,
+    "_actualFontSize": 25,
+    "_fontSize": 25,
+    "_lineHeight": 30,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "e0268bbc-bbe7-4529-a284-d0121144491d"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_N$string": "基地生命值",
     "_N$horizontalAlign": 1,
